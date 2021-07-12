@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>📧 Contacto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <!-- ENCABEZADO ----------->
+
+    <header>
+        <div class="arriba">
+            <div>
+                <img class="logoLupa" src="../iconos/lupa.png">
+            </div>
+
+            <div class="logoRedes">
+                <img src="../iconos/facebook.png">
+                <img src="../iconos/instagram.png">
+                <img src="../iconos/twitter.png">
+                <img src="../iconos/youtube.png">
+            </div>
+        </div>
+        <div class="logo">
+            <img class="logOso" src="../logo/tecnoso.png">
+        </div>
+
+        <nav class="navbar navbar-expand-lg  navbar-dark  ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="miNav" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="miNav" href="../pag/contacto.html" target="_blank">CONTACTO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class=" miNav dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      CONOCENOS
+                    </a>
+                            <ul class="dropdown-menu subMenu" aria-labelledby="navbarDropdown">
+                                <li><a class="miSub" href="../pag/menu.html" target="_blank">Nuestra Historia</a></li>
+                                <li><a class="miSub" href="#">Recursos Humanos</a></li>
+                                <li><a class="miSub" href="#">Nuestra Gente</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+
+    </header>
+    <!-- SECCIONES ----------->
+    <section class="contact">
+        <div class="titulo">
+            <h2>✉ Contáctanos!!</h2>
+            <h4>Ingresa tus datos y nos comunicaremos con vos.</h4>
+        </div>
+        <form class="margenForm" action="">
+            <div class="cierre">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="escribe tu nombre" required>
+                </div>
+                <div><label for="lname">Apellido</label>
+                    <input type="text" name="lname" id="lname" placeholder="escribe tu apellido" required>
+                </div>
+                <div>
+                    <label for="email">Mail</label>
+                    <input type="email" name="email" id="email" placeholder="escribe tu email" required>
+                </div>
+                <div>
+                    <label for="consulta">Escribenos tu consulta</label><br>
+                    <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="donde">Donde nos conociste?</label>
+                    <select name="donde" id="donde">
+                    <option value="redes">Redes Sociales</option>
+                    <option value="amigos">Amigos</option>
+                    <option value="buscadores">Buscadores</option>
+                    <option value="otros">Otros</option>
+                </select>
+                </div>
+                <div>
+                    <label for="recibirnoticias">Deseas recibir noticias de tecn.OSO</label>
+                    <input type="checkbox">
+                </div>
+                <div class="botonEnviar">
+                    <input type="reset" value="Limpiar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+        </form>
+
+
+    </section>
+
+    <!-- PIE ----------->
+    <footer>
+
+
+        <div class="datos">
+            <ul>
+                <li>
+                    <h5>Nuestra historia</h5>
+                </li>
+                <li>
+                    <h5>Patrocinadores</h5>
+                </li>
+                <li>
+                    <a href="../pag/contacto.html" target="_blank">
+                        <h5>Contacto</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="../#Noticias">
+                        <h5>Ir a Noticias</h5>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div id="baseStore">
+            <a href="../pag/store.html" target="_blank">
+                <img class="logoCarro" src="../iconos/shopping-bag.png">
+                <h5>STORE</h5>
+
+            </a>
+
+        </div>
+        <div class="logoRedesAbajo">
+            <img src="../iconos/facebook.png">
+            <img src="../iconos/instagram.png">
+            <img src="../iconos/twitter.png">
+            <img src="../iconos/youtube.png">
+        </div>
+
+
+
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+@import "header";
+@import "footer";
+//espacio para importar
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Share Tech', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+div .titCard {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.muestra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 7rem;
+    flex-wrap: nowrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.cajas__titulo {
+    text-decoration: solid;
+    margin: 20px;
+}
+
+.fotoImagen {
+    width: 37rem;
+    margin: 0px 10px 15px 20px;
+}
+
+.logoCarro {
+    width: 40px;
+    position: relative;
+}
+
+h5 {
+    color: ivory;
+    font-size: 15px;
+}
+
+table {
+    border: solid;
+    border-collapse: collapse;
+    background: rgb(197, 194, 194);
+}
+
+table td {
+    border: solid;
+}
+
+table th {
+    border: solid;
+}
+
+#imgCompara {
+    width: 35rem;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: small;
+    width: 37rem;
+    margin: 25px;
+}
+
+#Noticias {
+    display: grid;
+    grid-template-areas: "cajaNoti cajaTopTen" "cajaNoti cajaSuscribe";
+    grid-template-columns: 50rem 31rem;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    align-content: center;
+    position: relative;
+    justify-content: center;
+}
+
+.cajaTopTen {
+    border: solid;
+    width: 24rem;
+    border-style: outset;
+    border-color: greenyellow;
+    grid-area: cajaTopTen;
+    justify-self: center;
+    align-self: center;
+    border-radius: 5%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cajaNoti {
+    grid-area: cajaNoti;
+    justify-self: center;
+}
+
+.cajaTopTen div ol {
+    margin: 15px;
+}
+
+.cajaSuscribe {
+    font-size: 2rem;
+    font-weight: bold;
+    grid-area: cajaSuscribe;
+    justify-self: center;
+    align-self: center;
+    width: 10rem;
+}
+
+.cajaSuscribe a {
+    animation-duration: 2.5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        font-size: 3rem;
+    }
+}
+
+.titulo {
+    margin: 30px;
+}
+
+#Noticias .pagina {
+    margin: 25px;
+}
+
+.margenCero {
+    width: 50rem;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.margenCero h2 {
+    text-align: center;
+}
+
+.margenCero p {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    text-align: center;
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.botonEnviar input {
+    margin: 30px;
+    padding: 10px;
+}
+
+.sectionStore h2 {
+    margin-bottom: 10px;
+}
+
+.sectionStore h4 {
+    margin-bottom: 20px;
+}
+
+th {
+    padding: 15px;
+}
+
+td {
+    padding: 25px;
+}
+
+#imgCompara {
+    width: 70%;
+    height: 70%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margenForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.margenForm div {
+    padding: 10px;
+}
+
+.cierre {
+    border: grey solid 2px;
+    width: 22rem;
+    margin: 40px;
+    border-radius: 1%;
+    border-style: outset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.muestra div {
+    width: 34rem;
+    height: 18rem;
+}
+
+.muestra div iframe {
+    width: 70%;
+    height: 70%;
+}
+
+.imaGen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.viDeo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.miBoton {
+    background-color: rgb(97, 26, 163);
+    color: #fff;
+    border-color: #c50dfd;
+}
+
+@media (max-width: 1200px) {
+    #Noticias {
+        display: grid;
+        grid-template-areas: "cajaNoti" "cajaTopTen" "cajaSuscribe";
+        grid-template-columns: 50rem;
+        grid-template-rows: 1fr 25rem 10rem;
+        width: 100%;
+        align-content: center;
+        position: relative;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #Noticias {
+        display: grid;
+        grid-template-areas: "cajaNoti" "cajaTopTen" "cajaSuscribe";
+        grid-template-columns: 50rem;
+        grid-template-rows: 1fr 25rem 10rem;
+        width: 100%;
+        align-content: center;
+        position: relative;
+        justify-content: center;
+    }
+    .muestra {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 7rem;
+        flex-wrap: wrap;
+    }
+    .fotoImagen {
+        width: 27rem;
+    }
+    p {
+        width: 27rem;
+    }
+    .margenCero {
+        width: 27rem;
+    }
+}
+
+@media (max-width: 380px) {
+    #Noticias {
+        display: grid;
+        grid-template-areas: "cajaNoti" "cajaSuscribe";
+        grid-template-columns: 23rem;
+        grid-template-rows: 1fr 10rem;
+        width: 100%;
+        align-content: center;
+        position: relative;
+        justify-content: center;
+    }
+    .fotoImagen {
+        display: none;
+    }
+    .cajaTopTen {
+        display: none;
+    }
+    p {
+        width: 100%;
+        margin: auto;
+        padding: 1rem;
+    }
+    .logOso {
+        width: 100%;
+    }
+    .logoRedesAbajo {
+        display: none;
+    }
+    .muestra {
+        display: none
+    }
+    .margenCero {
+        width: 20rem;
+    }
+}

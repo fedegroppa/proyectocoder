@@ -1,0 +1,65 @@
+@import "colores";
+@import "medidas";
+@mixin flex ($flex, $align-items) {
+    display: $flex;
+    align-items: $align-items;
+}
+
+header {
+    background-image: $bgcolorheader;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .arriba {
+        @include flex(flex, center);
+        margin-top: $medida-media/2;
+        margin-left: $medida-media;
+        margin-right: $medida-media;
+        .logoLupa {
+            width: $medida-media*2;
+        }
+    }
+    .logoRedes {
+        margin-left: auto;
+        display: flex;
+        .img {
+            width: 2rem;
+            margin-left: $medida-media/4;
+            margin-right: $medida-media/4;
+            &:hover {
+                transform: scale(1.2, 1.2);
+            }
+        }
+    }
+}
+
+.logo {
+    @include flex(flex, center);
+    justify-content: center;
+    .logOso {
+        width: 21rem;
+    }
+}
+
+.miNav {
+    color: cornsilk;
+    font-size: $medida-media-5;
+    font-family: 'Share Tech', sans-serif;
+    margin: $medida-media;
+    &:hover {
+        color: rgb(158, 235, 114);
+    }
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+.miSub {
+    color: cornsilk;
+    font-size: $medida-media-1;
+    font-family: 'Share Tech', sans-serif;
+    margin: $medida-media-3;
+    &:hover {
+        color: rgb(158, 235, 114);
+    }
+}
