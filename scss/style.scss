@@ -30,6 +30,22 @@ div .titCard {
     flex-wrap: nowrap;
 }
 
+.cajaSuscribe {
+    font-size: 2rem;
+    font-weight: bold;
+    grid-area: cajaSuscribe;
+    justify-self: center;
+    align-self: center;
+    width: 10rem;
+}
+
+.cajaSuscribe a {
+    animation-duration: 2 s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
 a {
     text-decoration: none;
 }
@@ -122,29 +138,15 @@ p {
     margin: 15px;
 }
 
-.cajaSuscribe {
-    font-size: 2rem;
-    font-weight: bold;
-    grid-area: cajaSuscribe;
-    justify-self: center;
-    align-self: center;
-    width: 10rem;
-}
-
-.cajaSuscribe a {
-    animation-duration: 2.5s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-}
-
 @keyframes aparecer {
     0% {
         opacity: 0.5;
+        color: blueviolet;
     }
     100% {
         opacity: 1;
         font-size: 3rem;
+        color: blueviolet;
     }
 }
 
