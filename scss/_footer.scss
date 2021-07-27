@@ -15,14 +15,21 @@ footer {
             transform: scale(1.2, 1.2);
         }
     }
-    #baseStore {
-        position: relative;
-        text-align: center;
-        &:hover {
-            transform: scale(1.3, 1.3);
-        }
+}
+
+#baseStore {
+    position: relative;
+    text-align: center;
+    &:hover {
+        transform: scale(1.3, 1.3);
+        cursor: pointer;
+        color: rgb(158, 235, 114);
     }
-    div {
-        margin: $medida-media;
+}
+
+div {
+    margin: $medida-media;
+    ul {
+        list-style: none;
     }
 }

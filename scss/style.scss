@@ -1,5 +1,7 @@
 @import "header";
 @import "footer";
+@import "colores";
+@import "medidas";
 //espacio para importar
 * {
     margin: 0;
@@ -40,19 +42,42 @@ div .titCard {
 }
 
 .cajaSuscribe a {
-    animation-duration: 2 s;
+    animation-duration: 3s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
+    color: rgb(77, 17, 133);
 }
 
 a {
     text-decoration: none;
 }
 
+@keyframes aparecer {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        font-size: 3rem;
+    }
+}
+
+.pagina {
+    color: rgb(60, 15, 102);
+}
+
 a:hover {
     color: greenyellow;
     cursor: pointer;
+}
+
+.cierre {
+    margin: 30px;
+}
+
+.cierre div {
+    margin: 8px;
 }
 
 .cajas__titulo {
@@ -73,6 +98,11 @@ a:hover {
 h5 {
     color: ivory;
     font-size: 15px;
+}
+
+h5:hover {
+    color: greenyellow;
+    cursor: pointer;
 }
 
 table {
@@ -115,12 +145,20 @@ p {
 .cajaTopTen {
     border: solid;
     width: 24rem;
-    border-style: outset;
-    border-color: greenyellow;
+    border-style: dashed;
+    border-color: rgb(64, 9, 109);
     grid-area: cajaTopTen;
     justify-self: center;
     align-self: center;
-    border-radius: 5%;
+    border-radius: 2%;
+}
+
+.cajaTopTen h3 {
+    text-align: center;
+}
+
+.contact {
+    width: 90%;
 }
 
 .flex {
@@ -136,18 +174,6 @@ p {
 
 .cajaTopTen div ol {
     margin: 15px;
-}
-
-@keyframes aparecer {
-    0% {
-        opacity: 0.5;
-        color: blueviolet;
-    }
-    100% {
-        opacity: 1;
-        font-size: 3rem;
-        color: blueviolet;
-    }
 }
 
 .titulo {
@@ -180,7 +206,8 @@ p {
 }
 
 .botonEnviar input {
-    margin: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
     padding: 10px;
 }
 
@@ -216,19 +243,22 @@ table {
     align-items: center;
 }
 
-.margenForm div {
-    padding: 10px;
+.rowa {
+    display: flex;
+    flex-wrap: nowrap;
+    a:hover {
+        color: chartreuse;
+    }
 }
 
 .cierre {
     border: grey solid 2px;
-    width: 22rem;
-    margin: 40px;
     border-radius: 1%;
     border-style: outset;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 25%;
 }
 
 .muestra div {
@@ -259,6 +289,33 @@ table {
     background-color: rgb(97, 26, 163);
     color: #fff;
     border-color: #c50dfd;
+    &:hover {
+        color: chartreuse;
+    }
+}
+
+.cartas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    p {
+        width: fit-content;
+    }
+    .tituloCartas {
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.botonDrop {
+    background-color: rgb(97, 26, 163);
+    color: white;
+    width: 100%;
+    &:hover {
+        color: chartreuse;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -301,6 +358,12 @@ table {
     .margenCero {
         width: 27rem;
     }
+    .subMenu {
+        width: auto;
+    }
+    .pagina {
+        width: fit-content;
+    }
 }
 
 @media (max-width: 380px) {
@@ -320,6 +383,9 @@ table {
     .cajaTopTen {
         display: none;
     }
+    .cajaNoti {
+        display: none;
+    }
     p {
         width: 100%;
         margin: auto;
@@ -336,5 +402,11 @@ table {
     }
     .margenCero {
         width: 20rem;
+    }
+    .subMenu {
+        width: auto;
+    }
+    .pagina {
+        width: fit-content;
     }
 }

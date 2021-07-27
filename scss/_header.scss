@@ -22,7 +22,7 @@ header {
     .logoRedes {
         margin-left: auto;
         display: flex;
-        .img {
+        img {
             width: 2rem;
             margin-left: $medida-media/4;
             margin-right: $medida-media/4;
@@ -43,7 +43,7 @@ header {
 
 .miNav {
     color: cornsilk;
-    font-size: $medida-media-5;
+    font-size: $medida-media;
     font-family: 'Share Tech', sans-serif;
     margin: $medida-media;
     &:hover {
@@ -56,10 +56,15 @@ header {
 
 .miSub {
     color: cornsilk;
-    font-size: $medida-media-1;
+    font-size: ($medida-media)-1;
     font-family: 'Share Tech', sans-serif;
-    margin: $medida-media-3;
+    margin: ($medida-media)-3;
     &:hover {
         color: rgb(158, 235, 114);
     }
+}
+
+.subMenu {
+    background-color: rgb(131, 97, 139);
+    width: 117%;
 }
