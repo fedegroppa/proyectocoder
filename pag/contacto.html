@@ -21,8 +21,12 @@
 
     <header>
         <div class="arriba">
-            <div>
+            <div class="buscador">
                 <img class="logoLupa" src="../iconos/lupa.png" alt="logo_lupa">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
 
             <div class="logoRedes">
@@ -53,6 +57,9 @@
                         <li class="nav-item">
                             <a class="miNav" href="../pag/contacto.html" target="_blank">CONTACTO</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="miNav" href="../pag/suscribe.html" target="_blank">SUSCRIBITE</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class=" miNav dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       CONOCENOS
@@ -79,42 +86,37 @@
             <h1>✉ Contáctanos!!</h1>
             <h4>Ingresa tus datos y nos comunicaremos con vos.</h4>
         </div>
-        <form class="margenForm" action="">
-            <div class="cierre">
-                <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name" placeholder="escribe tu nombre" required>
-                </div>
-                <div><label for="lname">Apellido</label>
-                    <input type="text" name="lname" id="lname" placeholder="escribe tu apellido" required>
-                </div>
-                <div>
-                    <label for="email">Mail</label>
-                    <input type="email" name="email" id="email" placeholder="escribe tu email" required>
-                </div>
-                <div>
-                    <label for="consulta">Escribenos tu consulta</label><br>
-                    <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <label for="donde">Donde nos conociste?</label>
-                    <select name="donde" id="donde">
-                    <option value="redes">Redes Sociales</option>
-                    <option value="amigos">Amigos</option>
-                    <option value="buscadores">Buscadores</option>
-                    <option value="otros">Otros</option>
-                </select>
-                </div>
-                <div>
-                    <label for="recibirnoticias">Deseas recibir noticias de tecn.OSO</label>
-                    <input type="checkbox">
-                </div>
-                <div class="botonEnviar">
-                    <input type="reset" value="Limpiar">
-                    <input type="submit" value="Enviar">
-                </div>
+
+        <form>
+            <div class="mb-6">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="name" class="form-control">
+            </div>
+            <div class="mb-6">
+                <label for="lastname" class="form-label">Apellido</label>
+                <input type="lastname" class="form-control">
+            </div>
+            <div class="mb-6">
+                <label for="email" class="form-label">E-Mail</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="mb-6">
+                <label for="exampleFormControlTextarea1" class="form-label">Escribenos tu consulta</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-6 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Deseas recibir noticias de tecn.OSO</label>
+            </div>
+            <div class="botonera">
+                <button type="reset" class="miBoton btn">Limpiar</button>
+                <button type="submit" class="miBoton btn">Enviar</button>
             </div>
         </form>
+
+
+
+
 
 
     </section>

@@ -32,21 +32,18 @@ div .titCard {
     flex-wrap: nowrap;
 }
 
-.cajaSuscribe {
-    font-size: 2rem;
-    font-weight: bold;
-    grid-area: cajaSuscribe;
+.cajaSuscri {
+    grid-area: cajaSuscri;
     justify-self: center;
     align-self: center;
-    width: 10rem;
+    width: 24rem;
+    border-radius: 10%;
 }
 
-.cajaSuscribe a {
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    color: rgb(77, 17, 133);
+.botonSuscribe {
+    background-color: #9650aca8;
+    color: #46045a;
+    width: 100%;
 }
 
 a {
@@ -133,7 +130,7 @@ p {
 
 #Noticias {
     display: grid;
-    grid-template-areas: "cajaNoti cajaTopTen" "cajaNoti cajaSuscribe";
+    grid-template-areas: "cajaNoti cajaTopTen" "cajaNoti cajaSuscri";
     grid-template-columns: 50rem 31rem;
     grid-template-rows: 1fr 1fr;
     width: 100%;
@@ -142,15 +139,33 @@ p {
     justify-content: center;
 }
 
+.carusel {
+    div {
+        margin: 0%;
+    }
+}
+
+.cardMenu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .ancho {
+        width: 100%;
+    }
+}
+
 .cajaTopTen {
-    border: solid;
     width: 24rem;
-    border-style: dashed;
-    border-color: rgb(64, 9, 109);
     grid-area: cajaTopTen;
     justify-self: center;
     align-self: center;
     border-radius: 2%;
+    .topTen {
+        color: black;
+        &:hover {
+            color: rgb(91, 172, 11);
+        }
+    }
 }
 
 .cajaTopTen h3 {
@@ -211,12 +226,14 @@ p {
     padding: 10px;
 }
 
-.sectionStore h2 {
-    margin-bottom: 10px;
-}
-
-.sectionStore h4 {
-    margin-bottom: 20px;
+.sectionStore {
+    width: 100%;
+    h2 {
+        margin-bottom: 10px;
+    }
+    h4 {
+        margin-bottom: 20px;
+    }
 }
 
 th {
@@ -294,6 +311,12 @@ table {
     }
 }
 
+.botonera {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
 .cartas {
     display: flex;
     flex-direction: row;
@@ -321,9 +344,9 @@ table {
 @media (max-width: 1200px) {
     #Noticias {
         display: grid;
-        grid-template-areas: "cajaNoti" "cajaTopTen" "cajaSuscribe";
+        grid-template-areas: "cajaNoti" "cajaTopTen" "cajaSuscri";
         grid-template-columns: 50rem;
-        grid-template-rows: 1fr 25rem 10rem;
+        grid-template-rows: 1fr 25rem 25rem;
         width: 100%;
         align-content: center;
         position: relative;
@@ -334,13 +357,21 @@ table {
 @media (max-width: 768px) {
     #Noticias {
         display: grid;
-        grid-template-areas: "cajaNoti" "cajaTopTen" "cajaSuscribe";
+        grid-template-areas: "cajaNoti" "cajaTopTen" "cajaSuscri";
         grid-template-columns: 50rem;
-        grid-template-rows: 1fr 25rem 10rem;
+        grid-template-rows: 1fr 25rem 25rem;
         width: 100%;
         align-content: center;
         position: relative;
         justify-content: center;
+    }
+    .cardMenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .ancho {
+            width: 100%;
+        }
     }
     .muestra {
         display: flex;
@@ -369,9 +400,9 @@ table {
 @media (max-width: 380px) {
     #Noticias {
         display: grid;
-        grid-template-areas: "cajaNoti" "cajaSuscribe";
+        grid-template-areas: "cajaNoti" "cajaSuscri";
         grid-template-columns: 23rem;
-        grid-template-rows: 1fr 10rem;
+        grid-template-rows: 1fr 25rem;
         width: 100%;
         align-content: center;
         position: relative;

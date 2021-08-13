@@ -18,6 +18,10 @@ header {
         .logoLupa {
             width: $medida-media*2;
         }
+        .buscador {
+            display: flex;
+            flex-direction: row;
+        }
     }
     .logoRedes {
         margin-left: auto;
