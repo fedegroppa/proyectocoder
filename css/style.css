@@ -260,10 +260,12 @@ p {
 
 .sectionStore {
   width: 100%; }
-  .sectionStore h2 {
-    margin-bottom: 10px; }
+  .sectionStore h1 {
+    margin-bottom: 10px;
+    text-align: center; }
   .sectionStore h4 {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
 
 th {
   padding: 15px; }
