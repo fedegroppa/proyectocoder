@@ -399,23 +399,25 @@ table {
 @media (max-width: 380px) {
   #Noticias {
     display: grid;
-    grid-template-areas: "cajaNoti" "cajaTopTen" "cajaSuscri";
+    grid-template-areas: "cajaNoti" "cajaSuscri";
     grid-template-columns: 23rem;
-    grid-template-rows: 1fr 25rem 25rem;
+    grid-template-rows: 1fr 25rem;
     width: 100%;
     align-content: center;
     position: relative;
     justify-content: center; }
+  .fotoImagen {
+    display: none; }
+  .cajaTopTen {
+    display: none; }
+  .cajaNoti {
+    display: none; }
   p {
     width: 100%;
     margin: auto;
     padding: 1rem; }
   .logOso {
-    width: 20rem; }
-  .logoRedes a img {
-    width: 1.5rem;
-    margin-left: 5px;
-    margin-right: 5px; }
+    width: 100%; }
   .logoRedesAbajo {
     display: none; }
   .muestra {
@@ -425,20 +427,4 @@ table {
   .subMenu {
     width: auto; }
   .pagina {
-    width: 70%; }
-  .logoLupa {
-    display: none; }
-  .cajaSuscri {
-    grid-area: cajaSuscri;
-    justify-self: center;
-    align-self: center;
-    width: 23rem;
-    border-radius: 10%; }
-  .cajaTopTen {
-    width: 20rem;
-    grid-area: cajaTopTen;
-    justify-self: center;
-    align-self: center;
-    border-radius: 2%; }
-  .fotoImagen {
-    width: 100%; } }
+    width: fit-content; } }
